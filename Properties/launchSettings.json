@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LEDNotifier": {
+      "commandName": "Project",
+      "commandLineArgs": "random"
+    }
+  }
+}
