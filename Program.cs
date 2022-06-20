@@ -5,6 +5,7 @@ byte color_code = 0x0;
 
 if (args.Length != 1)
 {
+    Console.WriteLine("LEDNotifier off | blue | red | green | aqua | purple | yellow | white | random");
     Console.WriteLine("No or too many arguments");
     return 1;
 }
@@ -48,7 +49,7 @@ switch (args[0])
 HidDevice hidDevice;
 var ret = DeviceList.Local.TryGetHidDevice(out hidDevice, vendorID: 0x1294, productID: 0x1320);
 
-if(ret == false)
+if (ret == false)
 {
     Console.WriteLine("Device not found");
     return 1;
